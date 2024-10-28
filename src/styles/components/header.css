@@ -1,0 +1,77 @@
+.header .background {
+  position: relative;
+  width: 100%;
+  padding-bottom: 25%;
+  background-color: lightslategray;
+}
+
+/* main */
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px 23px 23px 23px;
+}
+
+.header-main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* title */
+
+.title > h1 {
+  font-size: 22.5px;
+  font-weight: 600;
+  line-height: 1.33333;
+}
+
+.title > p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* links */
+
+.links > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.links > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.links > ul > li > a:hover {
+  color: #0a66c2;
+  text-decoration: underline;
+}
+
+/* page-navigation */
+
+.page-navigation {
+  display: flex;
+  gap: 8px;
+}
+
+.page-navigation > button {
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: lightgray;
+  border-radius: 8px;
+}
+
+.page-navigation > button:hover {
+  background-color: gray;
+  color: aliceblue;
+}
