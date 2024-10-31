@@ -1,7 +1,9 @@
+import LatestActivity from "../components/LatestActivity";
+
 const HomePage = () => {
   return (
     <>
-      <h2>homepage</h2>
+      <LatestActivity />
     </>
   );
 };
