@@ -1,5 +1,6 @@
 import Accordion from "./Accordion/Accordion";
 import BoxConatiner from "./BoxConatiner";
+import eliceBrandLogo from "../assets/elice-track-logo.svg";
 
 export default function LatestActivity() {
   return (
@@ -8,10 +9,7 @@ export default function LatestActivity() {
         <h1 className="title">최근 활동</h1>
         <div className="latest-activity">
           <div className="img-container">
-            <img
-              src="/src/assets/elice-track-logo.svg"
-              alt="elice-track-logo"
-            />
+            <img src={eliceBrandLogo} alt="elice-track-logo" />
           </div>
           <div className="latest-activity-description-container">
             <p className="latest-activity-title">엘리스 트랙</p>
