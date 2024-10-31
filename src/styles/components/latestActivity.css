@@ -38,7 +38,7 @@
 
 /* latest-activity-list */
 .latest-activity-list-container {
-  padding-left: 8px;
+  padding: 8px 8px 16px;
 }
 
 .latest-activity-list {

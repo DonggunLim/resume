@@ -4,4 +4,6 @@
   border: none;
   box-shadow: rgba(140, 140, 140, 0.2) 0px 0px 0px 1px;
   overflow: hidden;
+
+  position: relative;
 }
