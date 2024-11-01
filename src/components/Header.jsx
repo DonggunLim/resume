@@ -8,8 +8,8 @@ export default function Header() {
   const handleClickMenu = (path) => navigate(path);
 
   return (
-    <BoxConatiner>
-      <header className="header">
+    <header className="header">
+      <BoxConatiner>
         <div className="background">
           <Avatar />
         </div>
@@ -42,7 +42,7 @@ export default function Header() {
             <button onClick={() => handleClickMenu("/contact")}>연락처</button>
           </nav>
         </main>
-      </header>
-    </BoxConatiner>
+      </BoxConatiner>
+    </header>
   );
 }
