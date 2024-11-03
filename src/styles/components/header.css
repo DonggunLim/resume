@@ -68,11 +68,10 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: lightgray;
+  background-color: #fff;
   border-radius: 8px;
 }
 
 .page-navigation > button:hover {
-  background-color: gray;
-  color: aliceblue;
+  color: lightslategray;
 }

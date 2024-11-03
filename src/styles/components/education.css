@@ -1,0 +1,39 @@
+.education-wrapper {
+  padding: 22.5px;
+}
+
+.education-wrapper > .title {
+  font-size: 18.75px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.education {
+  display: flex;
+  gap: 16px;
+}
+
+.education > .img-container {
+  width: 48px;
+  height: 48px;
+}
+
+.education > .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-description > p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.education-description > p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.education-description > p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.6);
+}
