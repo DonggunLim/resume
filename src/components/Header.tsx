@@ -2,10 +2,11 @@ import { useNavigate } from "react-router-dom";
 import Avatar from "./Avatar";
 import EmailIcon from "../icons/EmailIcon";
 import LinkIcon from "../icons/LinkIcon";
-import BoxConatiner from "./BoxConatiner";
+import BoxConatiner from "./BoxConatiner.tsx";
+
 export default function Header() {
   const navigate = useNavigate();
-  const handleClickMenu = (path) => navigate(path);
+  const handleClickMenu = (path: string) => navigate(path);
 
   return (
     <header className="header">
