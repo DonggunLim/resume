@@ -49,11 +49,6 @@
   font-weight: 600;
 }
 
-.links > ul > li > a:hover {
-  color: #0a66c2;
-  text-decoration: underline;
-}
-
 /* page-navigation */
 
 .page-navigation {
