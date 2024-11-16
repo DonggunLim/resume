@@ -5,6 +5,10 @@
 @import "./styles/components/accordion.css";
 @import "./styles/components/education.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*  */
 
 * {
