@@ -1,47 +1,6 @@
-@import "./styles/components/avatar.css";
-@import "./styles/components/header.css";
-@import "./styles/components/boxContainer.css";
-@import "./styles/components/latestActivity.css";
-@import "./styles/components/accordion.css";
-@import "./styles/components/education.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/*  */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#root {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  background-color: #f4f2ee;
-}
-
-.wrraper {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 50px 0;
-}
-
-.main-contaienr {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-li {
-  list-style: none;
-}
 
 a {
   text-decoration: none;

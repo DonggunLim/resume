@@ -6,7 +6,7 @@ const LightIcon = () => {
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        className="w-5 h-5 fill-gray-900 text-gray-900"
+        className="w-6 h-6 fill-gray-900 text-gray-900 dark:fill-yellow-300 dark:text-yellow-300"
       >
         <path
           strokeLinecap="round"

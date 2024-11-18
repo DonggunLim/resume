@@ -27,7 +27,6 @@ const useThemeMode = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect1");
     document.documentElement.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
 

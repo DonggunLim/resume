@@ -20,16 +20,13 @@ const ThemeModeButton = () => {
   };
 
   return (
-    <div className="absolute top-3 right-3">
-      <button onClick={() => setIsOpen(!isOpen)} className="w-fit">
-        {isDarkMode ? <DarkIcon /> : <LightIcon />}
-      </button>
+    <div className="relative w-fit flex justify-center items-center">
       {isOpen && (
         <ul
-          className="absolute z-50 top-full right-0 bg-white 
-          rounded-lg ring-1 ring-slate-900/10 shadow-lg 
-        overflow-hidden w-36 py-1 text-sm text-slate-700 font-semibold
-         dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-300 mt-4"
+          className="absolute z-50 bottom-full my-4 -left-5 bg-white 
+          rounded-lg ring-1 ring-slate-900/10 shadow-2xl 
+        overflow-hidden w-36 text-sm text-slate-700 font-semibold
+         dark:bg-slate-900/40 dark:highlight-white/5 dark:text-slate-300"
         >
           {MODE_ITEM_LIST.map(({ icon, title }, index) => (
             <li
@@ -46,6 +43,9 @@ const ThemeModeButton = () => {
           ))}
         </ul>
       )}
+      <button onClick={() => setIsOpen(!isOpen)} className="w-fit">
+        {isDarkMode ? <DarkIcon /> : <LightIcon />}
+      </button>
     </div>
   );
 };

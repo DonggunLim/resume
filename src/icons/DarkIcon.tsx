@@ -2,10 +2,10 @@ const DarkIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 25 25"
+      viewBox="0 0 24 24"
       // strokeWidth={1.5}
       stroke="currentColor"
-      className="w-5 h-5 cursor-pointer fill-gray-900 text-gray-900"
+      className="w-6 h-6 cursor-pointer fill-gray-900 text-gray-900 dark:fill-yellow-300"
     >
       <path
         strokeLinecap="round"
