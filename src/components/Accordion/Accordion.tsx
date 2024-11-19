@@ -7,12 +7,12 @@ interface AccordionProps {
 }
 
 export default function Accordion({ children }: AccordionProps) {
-  const [isActive, setIsActive] = useState(false);
-  const handleClickButton = () => setIsActive(!isActive);
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClickButton = () => setIsOpen(!isOpen);
   return (
     <>
-      {isActive && <AccordionContent>{children}</AccordionContent>}
-      <AccordionButton handleClickButton={handleClickButton} />
+      {isOpen && <AccordionContent>{children}</AccordionContent>}
+      <AccordionButton handleClickButton={handleClickButton} isOpen={isOpen} />
     </>
   );
 }

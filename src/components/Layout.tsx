@@ -7,7 +7,9 @@ const Layout = () => {
       <div className="mx-auto min-h-screen max-w-screen-xl px-24 ">
         <div className="flex justify-between gap-2">
           <Header />
-          <main className="flex flex-col flex-1">{/* <Outlet /> */}</main>
+          <main className="flex flex-col flex-1 py-24">
+            <Outlet />
+          </main>
         </div>
       </div>
     </div>
