@@ -21,7 +21,7 @@ export default {
       },
       backgroundColor: {
         light: "#f4f2ee",
-        dark: "#1e293b",
+        dark: "#0f172a",
       },
     },
   },

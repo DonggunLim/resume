@@ -1,11 +1,13 @@
-import Aboutme from "../components/Aboutme";
+import Aboutme from "../components/AboutMe";
 import LatestActivity from "../components/LatestActivity";
+import Skills from "../components/Skills";
 
 const HomePage = () => {
   return (
     <>
       <Aboutme />
       <LatestActivity />
+      <Skills />
     </>
   );
 };
