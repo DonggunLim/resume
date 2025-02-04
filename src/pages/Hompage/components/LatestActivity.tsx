@@ -1,10 +1,10 @@
-import eliceBrandLogo from "../assets/elice-track-logo.svg";
-import Accordion from "./Accordion/Accordion";
+import { Accordion } from "@imdonggun/react-ui-kit";
+import eliceBrandLogo from "../../../assets/elice-track-logo.svg";
 import { FaLink } from "react-icons/fa6";
 
 export default function LatestActivity() {
   return (
-    <div>
+    <section>
       <h1 className="text-xl font-bold text-primary-light-text dark:text-primary-dark-text pb-3">
         최근 활동
       </h1>
@@ -103,6 +103,6 @@ export default function LatestActivity() {
           </Accordion>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }

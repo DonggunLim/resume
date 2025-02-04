@@ -1,6 +1,6 @@
 const Aboutme = () => {
   return (
-    <article className="flex flex-col gap-y-8 pb-36 leading-loose">
+    <article className="flex flex-col gap-y-8 leading-loose">
       <p>
         안녕하세요! 웹 개발자를 목표로 꾸준히 배워가고 있는 임동건입니다.
         유튜브를 통해 개발에 호기심을 가지게 되었고, 직접 웹을 만들어보는 과정이

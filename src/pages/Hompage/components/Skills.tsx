@@ -1,9 +1,9 @@
-import Button from "./commonui/Button";
+import Button from "../../../components/commonui/Button";
 
 const Skills = () => {
   return (
-    <>
-      <h1 className="text-xl text-primary-light-text dark:text-primary-dark-text font-bold pt-24">
+    <section>
+      <h1 className="text-xl text-primary-light-text dark:text-primary-dark-text font-bold">
         Skills
       </h1>
       <div className="p-4">
@@ -56,7 +56,7 @@ const Skills = () => {
           </li>
         </ul>
       </div>
-    </>
+    </section>
   );
 };
 
