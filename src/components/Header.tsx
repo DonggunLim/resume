@@ -18,7 +18,7 @@ export default function Header() {
   const navigate = useNavigate();
   const { pathname: currentPath } = useLocation();
   return (
-    <header className="h-screen flex-1 py-24 sticky top-0">
+    <header className="h-screen flex-1 py-4 flex justify-center lg:py-24 sticky top-0">
       <main className="flex flex-col h-full gap-2">
         <Avatar />
         <div>
