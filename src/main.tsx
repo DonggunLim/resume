@@ -3,8 +3,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/Hompage/HomePage";
-import PorfolioPage from "./pages/PortfolioPage/ProtfolioPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +11,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/portfolio", element: <PorfolioPage /> },
-      { path: "/contact", element: <ContactPage /> },
+      { path: "/portfolio", element: <PortfolioPage /> },
     ],
   },
 ]);
