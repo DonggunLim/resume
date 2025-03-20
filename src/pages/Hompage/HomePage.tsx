@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
       <Aboutme />
-      <LatestActivity />
       <Skills />
+      <LatestActivity />
     </>
   );
 };

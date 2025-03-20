@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
+import { Analytics } from "@vercel/analytics/react";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
         <div className="flex flex-1 overflow-hidden lg:py-16 md:py-24">
           <main className="flex flex-col flex-1 overflow-y-auto p-4">
             <Outlet />
+            <Analytics />
           </main>
         </div>
       </div>
