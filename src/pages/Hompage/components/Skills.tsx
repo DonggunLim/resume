@@ -40,8 +40,8 @@ const Skills = () => {
         Skills
       </h1>
       {SKILLS.map(({ category, skills }) => (
-        <div key={category} className="p-4">
-          <h2 className="text-base font-semibold pb-2">{category}</h2>
+        <div key={category} className="py-2">
+          <h2 className="text-base font-semibold mb-2">{category}</h2>
           <ul className="flex gap-2 flex-wrap">
             {skills.map((skill) => (
               <li key={skill}>

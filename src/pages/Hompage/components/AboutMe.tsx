@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <article className="flex flex-col leading-relaxed mb-20">
+    <article className="flex flex-col leading-relaxed">
       <p>
         안녕하세요. 웹 프론트엔드 개발자 임동건입니다. React와 Express를 활용한
         풀스택 개발 을 경험하며, 특히 UI 컴포넌트 설계와 최적화에 집중하고

@@ -4,11 +4,11 @@ import Skills from "./components/Skills";
 
 const HomePage = () => {
   return (
-    <>
+    <main className="space-y-10">
       <Aboutme />
       <Skills />
       <LatestActivity />
-    </>
+    </main>
   );
 };
 
