@@ -46,10 +46,7 @@ export default function Header() {
             <GithubIcon />
           </li>
           <li className="cursor-pointer hover:scale-105 duration-200">
-            <a
-              href="/public/imdonggun_resume.pdf"
-              download="imdonggun_resume.pdf"
-            >
+            <a href="/imdonggun_resume.pdf" download="imdonggun_resume.pdf">
               <FaFilePdf className="w-6 h-6 dark:text-white" />
             </a>
           </li>
