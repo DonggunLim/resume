@@ -8,6 +8,7 @@ export const teamProjects = [
       "TypeScript, React, Express, MongoDB, Docker, Socket.io, Zustand, Tanstack-Query",
     repoFront: "https://github.com/DonggunLim/Petple_front",
     repoBack: "https://github.com/DonggunLim/Petple_back",
+    web: "https://petple-front.vercel.app",
     tasks: [
       {
         title: "Socket.io를 이용한 실시간 채팅 기능 개발",
@@ -46,6 +47,7 @@ export const teamProjects = [
     techStack: "TypeScript, React, Express, MongoDB, Mongoose",
     repoFront: "https://github.com/DonggunLim/Blahblah_front",
     repoBack: "https://github.com/DonggunLim/Blahblah_back",
+    web: "https://blahblah-front.vercel.app",
     tasks: [
       {
         title: "Google Oauth를 이용한 사용자 인증 구현",
@@ -76,6 +78,7 @@ export const teamProjects = [
     techStack: "JavaScript, React, Express, MongoDB, Mongoose, TypeScript",
     repoFront: "https://github.com/DonggunLim/WorkPluse_front",
     repoBack: "https://github.com/DonggunLim/WorkPlus_back",
+    web: "https://work-plus-front.vercel.app",
     tasks: [
       {
         title: "Express와 MongoDB, Mongoose를 활용한 RESTful API 설계 및 구현",

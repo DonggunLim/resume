@@ -1,4 +1,4 @@
-import { FaGithub, FaNpm } from "react-icons/fa";
+import { FaGithub, FaNpm, FaLink } from "react-icons/fa";
 import Button from "../../components/commonui/Button";
 import { personalProjects, teamProjects } from "../../consts/projects";
 
@@ -8,7 +8,7 @@ const PortfolioPage = () => {
       <h2 className="text-primary-light-text dark:text-primary-dark-text text-lg font-semibold mb-4">
         Team Project
       </h2>
-      <ul className="space-y-4">
+      <ul className="space-y-4 mb-10">
         {teamProjects.map((project) => (
           <li key={project.title} className="mb-6">
             <h3 className="font-bold mb-2">{project.title}</h3>
@@ -39,6 +39,16 @@ const PortfolioPage = () => {
               >
                 <FaGithub className="text-xl" />
                 Backend Repository
+              </a>
+              |
+              <a
+                href={project.web}
+                className="text-blue-500 hover:underline flex items-center gap-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLink className="text-lg" />
+                Web
               </a>
             </p>
 
