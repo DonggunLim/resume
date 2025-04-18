@@ -34,7 +34,7 @@ export default function Header() {
             className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition"
           >
             <MdOutlineEmail className="text-lg" />
-            <span>ehdrjs130@gmail.com</span>
+            <span>Ldonggun6766@gmail.com</span>
           </a>
           <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
             <IoMdPhonePortrait className="text-lg" />
