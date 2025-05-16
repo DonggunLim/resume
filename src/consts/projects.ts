@@ -12,30 +12,30 @@ export const teamProjects = [
     tasks: [
       {
         title: "Socket.io를 이용한 실시간 채팅 기능 개발",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/Socket.io%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%B1%84%ED%8C%85-%EA%B5%AC%ED%98%84",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/%EC%8B%A4%EC%8B%9C%EA%B0%84-%EC%B1%84%ED%8C%85-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%ED%98%84",
       },
       {
         title: "GitLab Runner와 Docker를 이용한 CI/CD 파이프라인 구축",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/GitLab-Runner%EC%99%80-Docker%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-CI-CD-%EA%B5%AC%EC%B6%95",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/GitLab-CI-CD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EA%B5%AC%EC%B6%95%EC%9D%84-%ED%86%B5%ED%95%9C-%EB%B0%B0%ED%8F%AC-%EC%9E%90%EB%8F%99%ED%99%94-%EA%B2%BD%ED%97%98",
       },
       {
         title:
           "Tanstack-Query를 이용한 데이터 캐싱 최적화 및 Optimistic updates 적용",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/tanstack%E2%80%90query%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%BA%90%EC%8B%B1-%EB%B0%8F-%EC%83%81%ED%83%9C-%EB%8F%99%EA%B8%B0%ED%99%94-%EC%B5%9C%EC%A0%81%ED%99%94",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/tanstack%E2%80%90query%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%9C-%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0-%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EC%A0%9C%EC%96%B4%EC%99%80-%EA%B0%9C%EC%84%A0",
       },
       {
         title:
           "Intersection Observer API와 useInfiniteQuery를 활용한 무한 스크롤 기능 구현",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/Intersection-Observer-API%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-useInfiniteQuery-%EA%B8%B0%EB%B0%98-%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/useInfiniteQuery%EC%99%80-Intersection-Observer%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4-%EA%B5%AC%ED%98%84",
       },
       {
         title: "Presigned URL을 이용한 AWS S3 이미지 업로드 방식 구현",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/AWS-S3%EB%B2%84%ED%82%B7%EC%97%90-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/Presigned-URL,-Lambda%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C,-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94",
       },
       {
         title:
           "Context API와 Compound Pattern을 활용한 UI 공통 컴포넌트 설계 및 개발",
-        link: "https://github.com/DonggunLim/Petple_front/wiki/Context-API%EC%99%80-Compound-Pattern%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-UI-%EA%B3%B5%ED%86%B5-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%84%A4%EA%B3%84-%EB%B0%8F-%EA%B0%9C%EB%B0%9C",
+        link: "https://github.com/DonggunLim/Petple_front/wiki/UI-%EA%B3%B5%ED%86%B5-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%84%A4%EA%B3%84-%EB%B0%8F-%EA%B0%9C%EB%B0%9C",
       },
     ],
   },
@@ -64,10 +64,6 @@ export const teamProjects = [
       {
         title: "어드민 대시보드 및 게시판 관리 기능 개발",
         link: "https://github.com/DonggunLim/Blahblah_front/wiki/%EC%96%B4%EB%93%9C%EB%AF%BC-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%EB%B0%8F-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84",
-      },
-      {
-        title: "프로필 페이지 사용자 정보 조회 및 수정 기능 담당",
-        link: "%EB%B3%B4%EB%93%9C-%EB%B0%8F-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EA%B4%80%EB%A6%AC-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84",
       },
     ],
   },
