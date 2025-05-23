@@ -1,8 +1,8 @@
 import { useState } from "react";
 import useThemeMode, { ThemeModeType } from "../hooks/useThemeMode";
-import DarkIcon from "../icons/DarkIcon";
-import LightIcon from "../icons/LightIcon";
-import SystemIcon from "../icons/SystemIcon";
+import DarkIcon from "../assets/icons/DarkIcon";
+import LightIcon from "../assets/icons/LightIcon";
+import SystemIcon from "../assets/icons/SystemIcon";
 
 type ModeItemType = { icon: React.ReactNode; title: ThemeModeType };
 const MODE_ITEM_LIST: ModeItemType[] = [

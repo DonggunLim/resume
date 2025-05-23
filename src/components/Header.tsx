@@ -1,10 +1,4 @@
-import GithubIcon from "../icons/GithubIcon";
-
 const NAVIGATION_ITEMS = [
-  {
-    title: "About",
-    pathname: "about",
-  },
   {
     title: "Project",
     pathname: "project",
@@ -21,7 +15,7 @@ const NAVIGATION_ITEMS = [
 
 export default function Header() {
   return (
-    <header className="fixed top-10 left-24">
+    <header className="fixed top-1/2 translate-y-[-50%] left-10">
       <nav className="flex flex-col">
         <ol className="space-y-2">
           {NAVIGATION_ITEMS.map(({ title, pathname }, index) => (
