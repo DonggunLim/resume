@@ -1,8 +1,10 @@
 export const teamProjects = [
   {
-    title: "PetPle",
+    title: "Petple",
+    icon: "/src/assets/images/petple_icon.png",
+    status: "working",
     description:
-      "반려 동물이라는 키워드로 모이는 사람들을 위해 다양한 서비스와 커뮤니티 기능을 제공하는 웹 서비스",
+      "반려 동물이라는 키워드로 모이는 사람들을 위해 다양한 서비스와 커뮤니티 기능을 제공하는 웹 서비스입니다.",
     role: "Full-Stack (Frontend 50% / Backend 50%)",
     techStack:
       "TypeScript, React, Express, MongoDB, Docker, Socket.io, Zustand, Tanstack-Query",
@@ -41,8 +43,10 @@ export const teamProjects = [
   },
   {
     title: "BlahBlah",
+    icon: "/src/assets/images/blahblah_icon.svg",
+    status: "working",
     description:
-      "사용자가 직접 원하는 주제로 게시판을 만들고 커뮤니티를 제공해주는 웹 서비스",
+      "사용자가 직접 원하는 주제로 게시판을 만들어 커뮤니티 형성을 제공해주는 웹 서비스 입니다.",
     role: "Full-Stack (Frontend 50% / Backend 50%)",
     techStack: "TypeScript, React, Express, MongoDB, Mongoose",
     repoFront: "https://github.com/DonggunLim/Blahblah_front",
@@ -69,7 +73,9 @@ export const teamProjects = [
   },
   {
     title: "WorkPlus",
-    description: "업무 지원 플랫폼이라는 주제로 진행한 미니 프로젝트",
+    icon: "/src/assets/images/workplus_icon.png",
+    status: "working",
+    description: "업무 지원 플랫폼이라는 주제로 진행한 웹 프로젝트 입니다.",
     role: "팀장 (Backend 100%, Frontend 50%)",
     techStack: "JavaScript, React, Express, MongoDB, Mongoose, TypeScript",
     repoFront: "https://github.com/DonggunLim/WorkPluse_front",
