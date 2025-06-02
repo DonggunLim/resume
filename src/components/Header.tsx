@@ -15,7 +15,7 @@ const NAVIGATION_ITEMS = [
 
 export default function Header() {
   return (
-    <header className="fixed top-1/2 translate-y-[-50%] left-10">
+    <header className="fixed top-1/2 left-10 translate-y-[-50%]">
       <nav className="flex flex-col">
         <ol className="space-y-2">
           {NAVIGATION_ITEMS.map(({ title, pathname }, index) => (

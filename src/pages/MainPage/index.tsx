@@ -3,7 +3,7 @@ import Project from "./components/Project";
 
 const MainPage = () => {
   return (
-    <section className="max-w-[1000px] mx-auto">
+    <section className="mx-auto max-w-[1000px]">
       <Hero />
       <Project />
     </section>
