@@ -1,11 +1,11 @@
 const NAVIGATION_ITEMS = [
   {
-    title: "Project",
-    pathname: "project",
-  },
-  {
     title: "Skill",
     pathname: "skill",
+  },
+  {
+    title: "Project",
+    pathname: "project",
   },
   {
     title: "Contact",
