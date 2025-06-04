@@ -25,7 +25,7 @@ export default function Header() {
                 key={`navigation-items-${pathname}`}
                 className="text-sm"
               >
-                <span className="text-primary">
+                <span className="text-highlight">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 . {title}

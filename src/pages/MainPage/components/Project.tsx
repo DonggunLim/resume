@@ -1,5 +1,3 @@
-import GithubIcon from "../../../assets/icons/GithubIcon";
-import LiveIcon from "../../../assets/icons/LiveIcon";
 import { teamProjects } from "../../../consts/projects";
 
 const Project = () => {
@@ -32,7 +30,7 @@ const Project = () => {
                 aria-label="Live Website Link"
                 title="Live Website"
               >
-                <LiveIcon />
+                {/* <LiveIcon /> */}
               </a>
               <a
                 href={project.repoFront}
@@ -42,7 +40,7 @@ const Project = () => {
                 aria-label="Github Link"
                 title="Github"
               >
-                <GithubIcon />
+                {/* <GithubIcon /> */}
               </a>
             </div>
           </li>

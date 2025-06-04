@@ -1,19 +1,50 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import WithFlip from "@/components/WithFlip";
+import { Github } from "lucide-react";
+
 const Hero = () => {
   return (
-    <section className="flex h-screen flex-col items-start justify-center">
-      <h1 className="block text-6xl text-white">Lim Donggun.</h1>
-      <h1 className="text-primary text-7xl text-white">Web Developer</h1>
-      <p className="text-text- my-5 text-lg font-medium">
-        더 나은 개발자가 되기 위해서, 보고, 배우며, 만들어 보는 중입니다.
-      </p>
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="border-primary text-primary hover:bg-primary/30 mt-6 inline-block rounded border px-5 py-2 transition-colors duration-200 hover:text-white"
-      >
-        Resume
-      </a>
+    <section className="flex h-screen items-center justify-center gap-x-20">
+      <div>
+        <h1 className="text-highlight block text-6xl">Lim Donggun.</h1>
+        <h1 className="text-7xl">Web Developer</h1>
+        <p className="my-5 text-lg font-medium">
+          더 나은 개발자가 되기 위해서, 보고, 배우며, 만들어 보는 중입니다.
+        </p>
+        <div className="flex items-center gap-x-4">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-highlight/10 hover:text-highlight inline-block rounded border px-5 py-2 transition-colors duration-200"
+          >
+            Resume
+          </a>
+          <a
+            href="https://github.com/DonggunLim"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="hover:text-highlight h-8 w-8" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <WithFlip className="h-72 w-72">
+          <WithFlip.Front>
+            <Avatar className="border-highlight flex h-full w-full items-center justify-center border-2">
+              <AvatarImage src="/src/assets/images/github_avatar.png" />
+              <AvatarFallback>AVATAR</AvatarFallback>
+            </Avatar>
+          </WithFlip.Front>
+          <WithFlip.Back>
+            <Avatar className="flex h-full w-full items-center justify-center border-2 border-white">
+              <AvatarImage src="/src/assets/images/avatar.png" />
+              <AvatarFallback>GITHUB</AvatarFallback>
+            </Avatar>
+          </WithFlip.Back>
+        </WithFlip>
+      </div>
     </section>
   );
 };
