@@ -3,15 +3,22 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import MainPage from "./pages/MainPage";
+import ProjectLayout from "./components/ProjectLayout";
+import ProjectPage from "./pages/Projects";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "/", element: <MainPage /> }],
+    children: [{ index: true, element: <MainPage /> }],
+  },
+  {
+    path: "/projects",
+    element: <ProjectLayout />,
+    children: [{ path: ":title", element: <ProjectPage /> }],
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );
