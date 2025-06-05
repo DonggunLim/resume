@@ -1,8 +1,10 @@
 import { PROJECTS } from "../../../consts/projects";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Project = () => {
+  const navigate = useNavigate();
   return (
     <section
       id="project"
@@ -10,7 +12,11 @@ const Project = () => {
     >
       <ul className="w-full space-y-8">
         {PROJECTS.map((project) => (
-          <li key={project.title} className="group relative cursor-pointer">
+          <li
+            key={project.title}
+            className="group relative cursor-pointer"
+            onClick={() => navigate(`/projects/${project.title}`)}
+          >
             <div className="my-4 flex items-center gap-x-2">
               <img
                 src={project.icon}
