@@ -32,29 +32,31 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="flex h-screen flex-col items-start justify-center gap-y-4"
+      className="flex h-screen flex-col items-center justify-center"
     >
-      {Object.entries(STACKS).map(([category, items]) => (
-        <div key={category}>
-          <p className="my-4 text-xl font-bold">{category}</p>
-          <ul className="ml-8 flex gap-4">
-            {items.map(({ name, src }) => (
-              <li key={name} className="flex flex-col items-center">
-                <div>
-                  <img
-                    src={src}
-                    alt={name}
-                    className={"h-12 w-12 object-contain"}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <span className="mt-1 text-sm">{name}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <div>
+        {Object.entries(STACKS).map(([category, items]) => (
+          <div key={category}>
+            <p className="font- my-4 text-xl font-bold">{category}</p>
+            <ul className="flex gap-8">
+              {items.map(({ name, src }) => (
+                <li key={name} className="flex flex-col items-center">
+                  <div>
+                    <img
+                      src={src}
+                      alt={name}
+                      className="h-12 w-12 object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <span className="mt-1 text-sm">{name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
