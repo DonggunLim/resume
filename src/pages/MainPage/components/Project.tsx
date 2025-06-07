@@ -33,12 +33,12 @@ const Project = () => {
             <p className="my-4 text-white">{project.description}</p>
             {project.techStack && (
               <ul className="mb-4 flex flex-wrap gap-2 text-sm text-gray-300">
-                {project.techStack.map((tech) => (
+                {project.techStack.all?.map((skill, index) => (
                   <li
-                    key={tech}
                     className="group-hover:text-highlight rounded bg-gray-800 px-2 py-1 text-xs text-white"
+                    key={`skill-${index}`}
                   >
-                    {tech}
+                    {skill}
                   </li>
                 ))}
               </ul>

@@ -4,7 +4,7 @@ import Skill from "./components/Skill";
 
 const MainPage = () => {
   return (
-    <section className="mx-auto max-w-[1000px]">
+    <section className="mx-auto max-w-3xl">
       <Hero />
       <Skill />
       <Project />

@@ -1,12 +1,18 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { MDXProvider } from "@mdx-js/react";
 import type { ComponentType } from "react";
+import Intro from "./components/Intro";
+import { PROJECTS } from "@/consts/projects";
 
 const ProjectPage = () => {
   const { title } = useParams();
   const [MDXContent, setMDXContent] = useState<ComponentType | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const project = useMemo(
+    () => PROJECTS.find((p) => p.title === title),
+    [title],
+  );
 
   useEffect(() => {
     if (!title) return;
@@ -22,7 +28,16 @@ const ProjectPage = () => {
 
   if (error) return <div>{error}</div>;
 
-  return <MDXProvider>{MDXContent && <MDXContent />}</MDXProvider>;
+  return (
+    <MDXProvider>
+      {MDXContent && project && (
+        <>
+          <Intro project={project} />
+          <MDXContent />
+        </>
+      )}
+    </MDXProvider>
+  );
 };
 
 export default ProjectPage;

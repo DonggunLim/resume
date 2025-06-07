@@ -1,4 +1,4 @@
-import { ArrowLeftFromLine, Users } from "lucide-react";
+import { ChevronLeft, Users } from "lucide-react";
 import { Outlet, useNavigate, useParams } from "react-router-dom";
 import {
   Carousel,
@@ -14,19 +14,25 @@ const ProjectLayout = () => {
   const { title: currentProjectTitle } = useParams();
 
   return (
-    <main className="mx-auto max-w-[1000px]">
+    <main className="mx-auto max-w-3xl">
+      {/* 돌아가기 */}
       <div className="my-4 cursor-pointer">
         <button
           onClick={() => navigate("/#project")}
-          className="hover:text-highlight flex items-center gap-2 text-sm text-gray-500"
+          className="hover:text-highlight flex cursor-pointer items-center gap-2 text-sm text-gray-500"
         >
-          <ArrowLeftFromLine className="h-8 w-8" />
+          <ChevronLeft className="h-8 w-8" />
           Projects로 돌아가기
         </button>
       </div>
-      <Outlet />
-      <section className="mx-auto max-w-md">
+      {/* mdx 부분 */}
+      <article className="prose prose-xl prose-invert max-w-none">
+        <Outlet />
+      </article>
+      {/* 프로젝트 캐로셀 */}
+      <section className="flex justify-center">
         <Carousel
+          className="max-w-md"
           opts={{
             align: "start",
             loop: true,
