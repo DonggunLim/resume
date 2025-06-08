@@ -1,0 +1,117 @@
+import { Check } from "lucide-react";
+
+<h2 id="목표">
+  <span className="text-outline mr-4">#</span>목표
+</h2>
+
+업무 지원 관리 플랫폼을 주제로, 사용자가 근태관리·휴가 신청·회의 등록 등의 기능을 손쉽게 이용할 수 있도록 시각적인 UI와 백오피스 연동이 가능한 웹서비스 구현을 목표로 했습니다.
+팀장 역할로서 백엔드를 단독으로 맡아 빠르게 API를 설계하고 프론트와 연동하는 데 집중했습니다.
+
+<li className="flex items-center gap-2">
+  <Check className="text-highlight h-4 w-4" />
+  <span>
+    근태·휴가·회의 기능이 통합된 업무 지원 플랫폼의 백엔드를 단독 설계·구현하고,
+    프론트와의 연동까지 주도
+  </span>
+</li>
+
+<h2 id="담당한 부분들">
+  <span className="text-outline mr-4">#</span>담당한 부분들
+</h2>
+
+### 사용자 로그인 회원가입 관련 페이지 백엔드 API
+
+<div className="not-prose">
+  <div>
+    <p className="font-bold">로그인, 회원가입 페이지</p>
+    <img
+      src="/src/assets/images/workplus/로그인페이지.jpg"
+      alt="workplus 로그인 화면"
+      loading="lazy"
+      decoding="async"
+      className="mb-8"
+    />
+  </div>
+  <ul>
+    <li className="flex items-center gap-2">
+      <Check className="text-highlight h-4 w-4" />
+      <span className="leading-relaxed text-gray-300">
+        JWT 기반 로그인 및 회원가입 API를 설계하고, 토큰 발급 및 쿠키 저장
+        방식으로 인증 로직 구현
+      </span>
+    </li>
+    <li className="flex items-center gap-2">
+      <Check className="text-highlight h-4 w-4" />
+      <span className="leading-relaxed text-gray-300">
+        이메일 중복 확인 로직을 포함한 사용자 인증 흐름 처리
+      </span>
+    </li>
+  </ul>
+</div>
+
+### 사용자 프로필 페이지 백엔드 API
+
+<img
+  src="/src/assets/images/workplus/프로필페이지.jpg"
+  alt="workplus 프로필 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      사용자 정보 조회 및 수정 API를 구현하고, 비밀번호 변경, 프로필 이미지
+      업데이트 등 사용자 관리 기능을 제공
+    </span>
+  </li>
+</ul>
+
+### 근태관리 백엔드 API
+
+<img
+  src="/src/assets/images/workplus/메인페이지.jpg"
+  alt="worklus 회의일정 휴가신청 폼 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      출근·퇴근 시간을 기록하고, 사용자별 근태 이력을 조회할 수 있는 API를 설계
+      및 구현
+    </span>
+  </li>
+</ul>
+
+### 회의 및 휴가신청 백엔드 API
+
+<img
+  src="/src/assets/images/workplus/회의일정및 휴가신청 페이지.jpg"
+  alt="worklus 회의일정 휴가신청 폼 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      회의 일정 및 휴가 신청 데이터를 생성·조회할 수 있는 API를 설계하고,
+      사용자별 권한에 따라 접근을 분기
+    </span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      휴가 신청 요청에 대해 관리자가 승인·거절할 수 있도록 상태 변경 로직을 구현
+    </span>
+  </li>
+</ul>
+
+<h2 id="성과">
+  <span className="text-outline mr-4">#</span>성과
+</h2>
+이번 프로젝트에서는 백엔드 개발을 단독으로 맡아, 서비스 전반의 흐름을 고려한 API
+설계와 프론트엔드 요구에 맞춘 데이터 구조를 직접 조율하며 전체적인 서비스 설계
+역량을 체득할 수 있었습니다.

@@ -1,0 +1,51 @@
+import { Check } from "lucide-react";
+
+<h2 id="목표">
+  <span className="text-outline mr-4">#</span>목표
+</h2>
+
+작업 이력을 명확히 관리하기 위해, 주석 기반 TODO를 자동 수집해 markdown 파일로 정리하는 Vite 플러그인을 제작했습니다.
+
+<li className="not-prose flex items-center gap-2">
+  <Check className="text-highlight mt-2 h-4 w-4 shrink-0 self-start" />
+  <span>TODO 주석들을 자동으로 수집 정리하여 .md 파일로 추출</span>
+</li>
+
+<h2 id="담당한 부분들">
+  <span className="text-outline mr-4">#</span>담당한 부분들
+</h2>
+
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      Vite 플러그인 형태로 구현하여 기존 프로젝트에 간단히 설치·적용 가능하도록
+      설계
+    </span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      `TODO:` 주석을 파싱하고 정해진 포맷의 `.md` 문서로 출력하여 가시성 향상
+    </span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      파일 경로, 라인 번호, 내용 등의 메타데이터를 함께 정리하여 개발자간 협업에
+      도움
+    </span>
+  </li>
+</ul>
+
+<h2 id="코드">
+  <span className="text-outline mr-4">#</span>코드
+</h2>
+
+<code></code>
+
+<h2 id="성과">
+  <span className="text-outline mr-4">#</span>성과
+</h2>
+
+플러그인을 직접 제작하며 Vite 플러그인 구조 이해와 파일 시스템 기반 파싱 경험을 쌓을 수 있었습니다.

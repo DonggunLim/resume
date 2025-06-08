@@ -26,7 +26,7 @@ const ProjectLayout = () => {
         </button>
       </div>
       {/* mdx 부분 */}
-      <article className="prose prose-xl prose-invert max-w-none">
+      <article className="prose prose-xl prose-invert prose-p:leading-loose max-w-none">
         <Outlet />
       </article>
       {/* 프로젝트 캐로셀 */}
@@ -38,7 +38,7 @@ const ProjectLayout = () => {
             loop: true,
           }}
         >
-          <CarouselContent>
+          <CarouselContent className="py-8">
             {PROJECTS.filter(({ title }) => title !== currentProjectTitle) //
               .map(({ icon, title, type }) => (
                 <CarouselItem

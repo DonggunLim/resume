@@ -1,0 +1,141 @@
+import { Check } from "lucide-react";
+
+<h2 id="목표">
+  <span className="text-outline mr-4">#</span>목표
+</h2>
+
+3주간 총 3명이 팀을 이루어, 사용자가 원하는 주제로 자유롭게 커뮤니티를 개설할 수 있는 웹 서비스를 만드는 프로젝트를 진행했습니다.
+모든 팀원이 각자 맡은 기능을 바탕으로 풀스택 개발에 참여했으며, 기존 운영자 중심 커뮤니티와 달리 사용자가 직접 커뮤니티 게시판을 개설할 수 있는 방식을 목표로 삼았습니다.
+또한, 직접 제작한 React UI 라이브러리를 활용하여 사용자 중심의 UI/UX 설계와 구현에 중점을 두었습니다.
+
+<li className="flex items-center gap-2">
+  <Check className="text-highlight h-4 w-4" />
+  <span>
+    사용자가 직접 원하는 주제로 커뮤니티를 개설할 수 있는 풀스택 웹서비스 개발,
+    자체 UI 라이브러리를 활용하여 구현
+  </span>
+</li>
+
+<h2 id="담당한 부분들">
+  <span className="text-outline mr-4">#</span>담당한 부분들
+</h2>
+
+### 사용자 로그인 회원가입 관련 페이지
+
+<div className="not-prose">
+  <div>
+    <p className="font-bold">로그인, 회원가입 페이지</p>
+    <img
+      src="/src/assets/images/blahblah/auth페이지.gif"
+      alt="blahblah 커뮤니티 Auth페이지"
+      loading="lazy"
+      decoding="async"
+      className="mb-8"
+    />
+  </div>
+  <ul>
+    <li className="flex items-center gap-2">
+      <Check className="text-highlight h-4 w-4" />
+      <span className="leading-relaxed text-gray-300">
+        Google OAuth 2.0을 활용한 사용자 인증 및 회원가입, 로그인 과정을
+        설계하고 구현하였습니다.
+      </span>
+    </li>
+    <li className="flex items-center gap-2">
+      <Check className="text-highlight h-4 w-4" />
+      <span className="leading-relaxed text-gray-300">
+        JWT와 쿠키 기반 로그인 및 API 인증을 구현 하였습니다.
+      </span>
+    </li>
+    <li className="flex items-center gap-2">
+      <Check className="text-highlight h-4 w-4" />
+      <span className="leading-relaxed text-gray-300">
+        Nodemailer를 이용한 이메일 인증 과정을 설계하고 구현하였습니다.
+      </span>
+    </li>
+  </ul>
+</div>
+
+### 사용자 프로필 페이지
+
+<img
+  src="/src/assets/images/blahblah/프로필 페이지.jpg"
+  alt="blahblah 프로필 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      직접 설계한 React 컴포넌트(pagination, Tabs)로 사용자 프로필 UI를
+      구현하였습니다.
+    </span>
+  </li>
+</ul>
+
+### 웹사이트 관리자 대시보드 페이지
+
+<img
+  src="/src/assets/images/blahblah/어드민대시보드페이지.jpg"
+  alt="blahblah 관리자 대시보드 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      관리자가 개설된 게시판들과 유저에대한 정보를 보고 처리할 수 있는 대시보드
+      페이지 입니다.
+    </span>
+  </li>
+</ul>
+
+### 사용자 게시판 대시보드 페이지
+
+<img
+  src="/src/assets/images/blahblah/사용자게시판대시보드페이지.jpg"
+  alt="blahblah 사용자 대시보드 화면"
+  loading="lazy"
+  decoding="async"
+/>
+<ul className="not-prose">
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      사용자가 개설한 게시판을 관리 할수있는 대시보드 페이지 입니다.
+    </span>
+  </li>
+  <li className="flex items-start gap-2">
+    <Check className="text-highlight mt-1 h-4 w-4 shrink-0" />
+    <span className="leading-relaxed text-gray-300">
+      공지사항 작성과 가입 요청을 한 유저의 수락,거부 및 추방이 가능합니다.
+    </span>
+  </li>
+</ul>
+
+<h2 id="트러블 슈팅">
+  <span className="text-outline mr-4">#</span>트러블슈팅
+</h2>
+
+### 상황
+
+로그인 시 서버에서 발급한 JWT를 HTTPOnly 쿠키로 저장하고, 프론트엔드에서는 로컬스토리지에 로그인 상태를 표시했습니다.
+하지만 페이지를 새로고침하거나 브라우저를 재실행하면 로그인 상태가 유지되지 않고, 다시 로그인 페이지로 이동하는 문제가 발생했습니다.
+이는 인증 쿠키가 요청에 포함되지 않아 서버가 세션을 확인하지 못하면서 발생한 현상이었습니다.
+
+### 해결 방법
+
+UserContext 도입 및 세션 복원: React의 Context API를 활용하여 전역으로 사용자 인증 정보를 관리하고, 초기 로딩 시 getSigninStatus() API를 호출해 세션 상태를 복원했습니다
+이 과정에서 로딩 스피너를 표시하여 사용자 경험을 개선하고 인증 확인이 완료될 때까지 콘텐츠를 지연시켰습니다.
+
+### 결과
+
+로그인 유지 기능을 개선한 결과, 사용자는 페이지를 새로고침해도 다시 로그인할 필요가 없어져 전반적인 API 반복 호출을 개선하였습니다.
+
+<h2 id="성과">
+  <span className="text-outline mr-4">#</span>성과
+</h2>
+
+JWT 기반 인증과 세션 복원 로직을 직접 구현하고 개선하는 과정을 통해, HTTPOnly 쿠키와 클라이언트 상태 관리의 차이점과 보안적인 고려사항에 대해 깊이 있게 이해할 수 있었습니다.
