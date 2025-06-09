@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import WithFlip from "@/components/WithFlip";
+import WithFlip from "@/components/ui/WithFlip";
 import { Github } from "lucide-react";
 
 const Hero = () => {
