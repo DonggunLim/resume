@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react";
 import type { ComponentType } from "react";
 import Intro from "./components/Intro";
 import { PROJECTS } from "@/consts/projects";
+import AnimatedLayout from "@/components/layout/AnimatedLayout";
 
 const ProjectPage = () => {
   const { title } = useParams();
@@ -29,14 +30,16 @@ const ProjectPage = () => {
   if (error) return <div>{error}</div>;
 
   return (
-    <MDXProvider>
-      {MDXContent && project && (
-        <>
-          <Intro project={project} />
-          <MDXContent />
-        </>
-      )}
-    </MDXProvider>
+    <AnimatedLayout>
+      <MDXProvider>
+        {MDXContent && project && (
+          <>
+            <Intro project={project} />
+            <MDXContent />
+          </>
+        )}
+      </MDXProvider>
+    </AnimatedLayout>
   );
 };
 

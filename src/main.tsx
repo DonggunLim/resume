@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./components/layout/Layout";
 import MainPage from "./pages/MainPage";
-import ProjectLayout from "./components/ProjectLayout";
+import ProjectLayout from "./components/layout/ProjectLayout";
 import ProjectPage from "./pages/Projects";
 
 const router = createBrowserRouter([
