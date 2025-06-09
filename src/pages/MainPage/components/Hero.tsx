@@ -4,7 +4,10 @@ import { Github } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="flex h-screen items-center justify-center gap-x-20">
+    <section
+      id="hero"
+      className="flex h-screen items-center justify-center gap-x-20"
+    >
       <div>
         <h1 className="text-highlight block text-6xl">Lim Donggun.</h1>
         <h1 className="text-7xl">Web Developer</h1>
@@ -12,14 +15,6 @@ const Hero = () => {
           더 나은 개발자가 되기 위해서, 보고, 배우며, 만들어 보는 중입니다.
         </p>
         <div className="flex items-center gap-x-4">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-highlight/10 hover:text-highlight inline-block rounded border px-5 py-2 transition-colors duration-200"
-          >
-            Resume
-          </a>
           <a
             href="https://github.com/DonggunLim"
             target="_blank"
