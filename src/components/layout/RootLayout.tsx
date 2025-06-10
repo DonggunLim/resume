@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Header from "../Header";
 import { AnimatePresence } from "motion/react";
 
-const Layout = () => {
+const RootLayout = () => {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
@@ -14,4 +14,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default RootLayout;
