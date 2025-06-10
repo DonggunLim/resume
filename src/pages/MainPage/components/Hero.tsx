@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex h-screen items-center justify-center gap-x-20"
+      className="flex h-screen flex-col-reverse items-center justify-center gap-y-8 px-4 text-center md:flex-row md:gap-x-20 md:text-left"
     >
-      <div>
+      <div className="text-left">
         <h1 className="text-highlight block text-6xl">Lim Donggun.</h1>
         <h1 className="text-7xl">Web Developer</h1>
         <p className="my-5 text-lg font-medium">
