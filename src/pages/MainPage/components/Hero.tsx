@@ -28,13 +28,13 @@ const Hero = () => {
         <WithFlip className="h-72 w-72">
           <WithFlip.Front>
             <Avatar className="border-highlight flex h-full w-full items-center justify-center border-2">
-              <AvatarImage src="/src/assets/images/github_avatar.png" />
+              <AvatarImage src="/images/github_avatar.png" />
               <AvatarFallback>AVATAR</AvatarFallback>
             </Avatar>
           </WithFlip.Front>
           <WithFlip.Back>
             <Avatar className="flex h-full w-full items-center justify-center border-2 border-white">
-              <AvatarImage src="/src/assets/images/avatar.png" />
+              <AvatarImage src="/images/avatar.png" />
               <AvatarFallback>GITHUB</AvatarFallback>
             </Avatar>
           </WithFlip.Back>

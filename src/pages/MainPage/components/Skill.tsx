@@ -5,26 +5,26 @@ type StacktsType = Record<
 
 const STACKS: StacktsType = {
   LANGUAGE: [
-    { name: "JavaScript", src: "/src/assets/images/js.png" },
-    { name: "TypeScript", src: "/src/assets/images/ts.png" },
+    { name: "JavaScript", src: "/images/js.png" },
+    { name: "TypeScript", src: "/images/ts.png" },
   ],
   WEB_FRONTEND: [
-    { name: "React", src: "/src/assets/images/react.png" },
-    { name: "React Query", src: "/src/assets/images/react_query.svg" },
-    { name: "Tailwind", src: "/src/assets/images/tailwind.png" },
-    { name: "Zustand", src: "/src/assets/images/zustand.svg" },
+    { name: "React", src: "/images/react.png" },
+    { name: "React Query", src: "/images/react_query.svg" },
+    { name: "Tailwind", src: "/images/tailwind.png" },
+    { name: "Zustand", src: "/images/zustand.svg" },
   ],
   WEB_BACKEND: [
-    { name: "Node.js", src: "/src/assets/images/node.png" },
-    { name: "Express", src: "/src/assets/images/express.png" },
-    { name: "MongoDB", src: "/src/assets/images/mongodb.svg" },
-    { name: "MySQL", src: "/src/assets/images/mysql.svg" },
+    { name: "Node.js", src: "/images/node.png" },
+    { name: "Express", src: "/images/express.png" },
+    { name: "MongoDB", src: "/images/mongodb.svg" },
+    { name: "MySQL", src: "/images/mysql.svg" },
   ],
 
   TOOLS: [
-    { name: "Git", src: "/src/assets/images/git.png" },
-    { name: "Docker", src: "/src/assets/images/docker.svg" },
-    { name: "AWS", src: "/src/assets/images/aws.webp" },
+    { name: "Git", src: "/images/git.png" },
+    { name: "Docker", src: "/images/docker.svg" },
+    { name: "AWS", src: "/images/aws.webp" },
   ],
 };
 

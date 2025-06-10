@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
   {
     type: "team",
     title: "Petple",
-    icon: "/src/assets/images/petple_icon.png",
+    icon: "/images/petple_icon.png",
     period: "2025.02 ~ 2025.03",
     status: "working",
     description:
@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
   {
     type: "team",
     title: "BlahBlah",
-    icon: "/src/assets/images/blahblah_icon.svg",
+    icon: "/images/blahblah_icon.svg",
     period: "2025.02 ~ 2025.03",
     status: "done",
     description:
@@ -94,7 +94,7 @@ export const PROJECTS: Project[] = [
   {
     type: "team",
     title: "WorkPlus",
-    icon: "/src/assets/images/workplus_icon.png",
+    icon: "/images/workplus_icon.png",
     status: "done",
     period: "2025.02 ~ 2025.03",
     description:
@@ -129,7 +129,7 @@ export const PROJECTS: Project[] = [
     period: "2024.11 ~ 현재",
     status: "working",
     role: "개인 프로젝트",
-    icon: "/src/assets/images/react.png",
+    icon: "/images/react.png",
     description:
       "Headless 스타일 및 Compound Pattern을 활용한 React UI 컴포넌트 라이브러리 입니다.",
     techStack: {
@@ -167,7 +167,7 @@ export const PROJECTS: Project[] = [
   {
     type: "personal",
     title: "Vite-Plugin-Generate-Todo",
-    icon: "/src/assets/images/vite.png",
+    icon: "/images/vite.png",
     period: "2일 소요",
     status: "done",
     role: "개인 프로젝트",
